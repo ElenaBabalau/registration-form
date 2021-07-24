@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(10, 98, 208, 0.1);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #2c2b2b;
+}
+
+.container {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+}
+
+.header {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #2c2b2b;
+  padding: 20px 40px;
+}
+
+header h2 {
+  margin: 0;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #d6d6d6;
+  border-radius: 5px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-control.error small {
+  color: #f21137;
+  visibility: visible;
+}
+
+.form-control.success input {
+  border-color: #9dcd55;
+  box-shadow: 0 2px 2px rgba(157, 205, 85, 0.3);
+}
+
+.form-control.error input {
+  border-color: #f21137;
+  box-shadow: 0 2px 2px rgba(242, 17, 55, 0.3);
+}
+
+.form button {
+  background-color: #0a62d0;
+  border: 2px solid #0a62d0;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
